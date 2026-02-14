@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background:linear-gradient(to top ,rgba(26, 0, 83, 1),rgba(3, 0, 36, 1));
+  height: 100vh;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 5px 30px;
+  padding: 13px;
+  position: absolute;
+  z-index: 5;
+}
+header ul li{
+  display: inline-block;
+}
+header a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+header ul li a{
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+header ul li a:hover{
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: black;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background:linear-gradient(to top,  rgb(85, 2, 86)  ,transparent);
+}
+
+.main img {
+  position: absolute; 
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#moon{
+  mix-blend-mode: screen;
+  transform: translateY(70px);
+}
+
+.nouvil{
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  transform: translateY(-140px);
+}
+
+.content{
+  color: white;
+  padding: 20px;
+}
+
+.content h2{
+  font-size: 25px;
+  margin: 20px;
+}
+
+.content p {
+  margin: 20px;
+}
+
